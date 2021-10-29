@@ -1,4 +1,4 @@
-<img src="https://i.imgur.com/nyYYqcL.png>
+<img src="https://i.imgur.com/nyYYqcL.png">
 
 # SEI Flex 44 - Building a Javascript Calculator Lab
 
