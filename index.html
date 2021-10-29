@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
+    <title>Building a Calculator</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="banner jumbotron jumbotron-fluid">
+            <h1 class="display-4 text-center">JS Calculator</h1>
+            <p class="lead text-center">Simple Calculator for basic mathematical operations!</p>
+        </div>
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-5">
+                    <div class="card">
+                        <div class="card-header text-center">Calculator</div>
+                        <div class="card-body align-self-center">
+                            <button data-number class="btn btn-secondary number">
+                                <h1>7</h1>
+                            </button>
+                            <button data-number class="btn btn-secondary number">
+                                <h1>8</h1>
+                            </button>
+                            <button data-number class="btn btn-secondary number">
+                                <h1>9</h1>
+                            </button>
+                            <button data-operation class="btn btn-warning operator">
+                                <h1>+</h1>
+                            </button>
+                            <br>
+                            <button data-number class="btn btn-secondary number">
+                                <h1>4</h1>
+                            </button>
+                            <button data-number class="btn btn-secondary number">
+                                <h1>5</h1>
+                            </button>
+                            <button data-number class="btn btn-secondary number">
+                                <h1>6</h1>
+                            </button>
+                            <button data-operation class="btn btn-warning operator">
+                                <h1>-</h1>
+                            </button>
+                            <br>
+                            <button data-number class="btn btn-secondary number">
+                                <h1>1</h1>
+                            </button>
+                            <button data-number class="btn btn-secondary number">
+                                <h1>2</h1>
+                            </button>
+                            <button data-number class="btn btn-secondary number">
+                                <h1>3</h1>
+                            </button>
+                            <button data-operation class="btn btn-warning operator">
+                                <h1>*</h1>
+                            </button>
+                            <br>
+                            <button data-number class="btn btn-secondary number">
+                                <h1>0</h1>
+                            </button>
+                            <button data-operation class="btn btn-warning operator">
+                                <h1>/</h1>
+                            </button>
+                            <button data-operation class="btn btn-warning operator">
+                                <h1>^</h1>
+                            </button>
+                            <button data-equals class="btn btn-warning operator">
+                                <h1>=</h1>
+                            </button>
+                            <br>
+                            <button data-clear class="p-2 w-100 bd-highlight btn btn-danger clear">Clear</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="card">
+                        <div class="results">
+                            <h3 class="card-header text-center">Results</h3>
+                            <div class="card-body">
+                                <div data-previous-operation class="equation previous-operation"></div>
+                                <div data-current-operation class="equation current-operation"></div>
+                                <hr>
+                                <div class="putersPutin"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
